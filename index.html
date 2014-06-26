@@ -6,11 +6,11 @@
   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <meta name="author" content="The Fellowship of Personal Travis">
+    <meta name="description" content="Taskukokoinen personal trainerisi. Julkaisuun asti ilmaiseksi.">
+    <link rel="shortcut icon" href="img/favicon.png">
     
-    <title>Personal Travis – kertoo mitä ja millä painolla</title>
+    <title>Personal Raineri – ei enää erillisiä treeniohjelmia ja tulospäiväkirjoja</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -31,17 +31,11 @@
     <div id="bg"></div>
   
     <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
-      <a class="navmenu-brand" href="#">Project name</a>
+      <a class="navmenu-brand" href="#">Personal Raineri</a>
       <ul class="nav navmenu-nav">
-        <li><a href="../navmenu/">Slide in</a></li>
-        <li class="active"><a href="./">Push</a></li>
-        <li><a href="../navmenu-reveal/">Reveal</a></li>
-        <li><a href="../navbar-offcanvas/">Off canvas navbar</a></li>
-      </ul>
-      <ul class="nav navmenu-nav">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a onclick="scrollToAnchor('who');">Kuka on Raineri?</a></li>
+        <li><a onclick="scrollToAnchor('usage');">Miten se toimii?</a></li>
+        <li><a onclick="scrollToAnchor('install');">Haluan asentaa sen!</a></li>
       </ul>
     </div>
 
@@ -53,233 +47,151 @@
       </button>
     </div>
 
-    <!-- first section - Home -->
+    <!-- Welcomer -->
     <div id="home" class="home">
       <div class="text-vcenter">
-        <h1>Hello World</h1>
-        <h3>This is bootstrap-based layout</h3>
-        <a href="#about" class="btn btn-default btn-lg">Continue</a>
+        <!-- Centered text could be addded here -->
       </div>
     </div>
-    <!-- /first section -->
     
-    <!-- third section - Services -->
-    <div id="desktop-navi" class="pad-section">
+    <!-- Desktop navi -->
+    <div id="desktop-nav" class="pad-section shadow">
       <div class="container">
-        <p class="text-center">Desktop navigation</p>
+      <ul class="desktop-nav">
+        <li><a onclick="scrollToAnchor('who');">Kuka on Raineri?</a> |</li>
+        <li><a onclick="scrollToAnchor('usage');">Miten se toimii?</a> |</li>
+        <li><a onclick="scrollToAnchor('install');">Haluan asentaa sen!</a></li>
+      </ul>
       </div>
     </div>
-    <!-- /third section -->
     
-    <!-- third section - Services -->
+    <!-- Description -->
     <div id="services" class="pad-section">
       <div class="container">
-        <h2 class="text-center">Our Services</h2> <hr />
-        <div class="row text-center">
+        <h1 name="who">Kuka on Raineri?</h2>
+        <div class="row">
+          <div class="col-sm-12 col-xs-12">
+            <p>Personal Raineri on mobiilisovellus, joka kertoo treenaajalle, mitä liikkeitä 
+            ja millä painoilla hänen tulisi tehdä. Se kertoo, mitä lihaksia treenata seuraavaksi. 
+            Se muistaa tuloksesi ja haastaa sinut ylittämään itsesti antamalla uusia tulostavoitteita.</p>
+
+            <p>Unohda paperinen treeniohjelma sekä tulosten kirjaaminen muistiin kynällä tai 
+            kännykkää näpyttelemällä. Riittää, että kosket näyttöön yhden kerran kerra. 
+            Siis tietysti ainoastaan silloin, kun olet tehnyt ennätyksen Personal Rainerin 
+            suosittamassa liikkeessä.</p>
+
+            <p>Nyt, kun Personal Raineri on beta-vaiheessa, sinulla on mahdollisuus 
+            kokeilla Personal Rainerin käyttämistä riskeittä, ilmaiseksi. Personal 
+            Raineriin on tulossa vielä runsaasti uusia ominaisuuksia ja bugikorjauksia, 
+            mutta voit huoletta ottaa Personal Rainerin salille mukaasi. 
+            Se on jo sisäsiisti.</p>
+
+            <p>Oletko valmis heittämään hyvästit paperiselle treeniohjelmallesi 
+            sekä tulospäiväkirjallesi?</p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    
+    <!-- Usage -->
+    <div id="services" class="pad-section">
+      <div class="container">
+        <h1 name="usage">Miten se toimii?</h2>
+        <div class="row">
           <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-cloud"> </i>
-            <h4>Service 1</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+            <p>Ensimmäisellä käynnistyskerralla valmennettava kertoo Personal Rainerille tämänhetkisen tason, ja tämän tiedon
+            perusteella Personal Raineri laskee, millaisia haasteita hän sinulle tarjoaa.
+            Jos sopivista painoista ei ole mitää käryä, voit hyväksyä oletukset ja muokata tason myöhemmin kohdilleen.</p>
           </div>
           <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-leaf"> </i>
-            <h4>Service 2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+            <img src="img/tutor-workout-bulkedit.png" class="img-responsive" alt="Responsive image" />
           </div>
           <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-phone-alt"> </i>
-            <h4>Service 3</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+            <p>Oikealla näkyy Personal Rainerin päänäkymä, joka tulee esiin aina ohjelman käynnistyksen jälkeen ensimmäistä
+            käynnistystä lukuun ottamatta. Tiilet edustavat mahdollisia treenejä, ja voit treenata minkä tahansa treenin.
+            Suositeltu treneni on korostettu eri värillä.</p>
           </div>
           <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-bullhorn"> </i>
-            <h4>Service 4</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+            <img src="img/tutor-main-view-1.png" class="img-responsive" alt="Responsive image" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
+            <p>Tiiltä täppäämällä näytöllesi avautuu haasteet, joista treenit koostuvat. 
+            Tavoitteenasi on onnistua haasteissa. Mikäli onnistut, merkitse tavoite saavutetuksi täppäämällä boksia. 
+            Haasteet kovenevat aina, kun onnistut suorittamaan Personal Rainerin asettaman haasteen.</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <img src="img/tutor-workout-unreached.png" class="img-responsive" alt="Responsive image" />
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <p>Vieressä näkyy saavutetuksi merkattu haaste. Seuraavan kerran, kun Personal Raineri
+            ehdottaa sinulle pystysoutua, haaste tulee olemaan vaikeampi. Muut haasteet ovat samoja,
+            kunnes ne suoritetaan. Kun vain muutokset raportoidaan, säästytään turhalta näpyttelyltä!</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <img src="img/tutor-workout-reached.png" class="img-responsive" alt="Responsive image" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
+            <p>Ylhäällä on kolme ikonia. Ensimmäisellä voit tallentaa treenin. Toisella voit jättää treenin
+            tallentamatta, jos esimerkiksi olet onnistunut sähläämään tavoitteet päin haitaria. Ai miten?
+            Kolmatta nappulaa eli kynää täppäämällä. Muokkaustilassa voit lisätä tai vähentää haasteen
+            vaikeutta liikekohtaisesti plussaa tai miinusa täppäämällä.</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <img src="img/tutor-workout-edit.png" class="img-responsive" alt="Responsive image" />
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <p>Kun olet tallentanut treenisi, voit poistua sovelluksesta huoletta. Personal Raineri
+            muistaa, mitä treenasit, ja näyttää sinulle sopivan treenin seuraavaksi, kun avaat
+            äplikeissönin. Ainiin, näet tiilistä, mihin lihaksiin mikäkin treeni käy.
+            Kipu on treenin jälkeen siellä, mihin ikoni on saanut luodin.</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <img src="img/tutor-main-view-2.png" class="img-responsive" alt="Responsive image" />
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    
+    <!-- Install -->
+    <div id="services" class="pad-section">
+      <div class="container">
+        <h1 name="install">Haluan asentaa sen!</h2>
+        <div class="row">
+          <div class="col-sm-12 col-xs-12">
+            <p>Voit pestata Personal Rainerin nyt ilmaiseksi Android-puhelimeesi 
+            <a href="https://play.google.com/store/apps/details?id=fi.personalraineri&hl=fi">Androidin Play-kaupasta.</a>
+            Oletko valmis heittämään hyvästit paperiselle treeniohjelmallesi sekä 
+            tulospäiväkirjallesi?</p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    
+    <!-- Q&A
+    <div id="services" class="pad-section">
+      <div class="container">
+        <h1 name="faq">Usein kysyttyä</h2>
+        <div class="row">
+          <div class="col-sm-12 col-xs-12">
+            <h3>Voinko muokata treeniohjelmaa?</h3>
+            <p>Et. Personal Raineri koutsaa sinua ohjelmalla, joka tähtää sekä lihaskasvuun
+            että voiman lisäämiseen. Jos sinulla on toisenlainen tavoite, Personal Raineri
+            on sinulle väärä koutsi. Personal Raineri ei estä sinua harrastamasta
+            kikkailua, kuten pakkotoistoja sun muuta. Negatiivisia toistoja sekä muita
+            tehokeinoja ei ole lisätty ohjelmaan, koska se on haluttu pitää mahdollisimman
+            yksinkertaisena.</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- /third section -->
-    
-    <!-- third section - Services -->
-    <div id="services" class="pad-section">
-      <div class="container">
-        <h2 class="text-center">Our Services</h2> <hr />
-        <div class="row text-center">
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-cloud"> </i>
-            <h4>Service 1</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-leaf"> </i>
-            <h4>Service 2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-phone-alt"> </i>
-            <h4>Service 3</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-bullhorn"> </i>
-            <h4>Service 4</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /third section -->
-    
-    <!-- third section - Services -->
-    <div id="services" class="pad-section">
-      <div class="container">
-        <h2 class="text-center">Our Services</h2> <hr />
-        <div class="row text-center">
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-cloud"> </i>
-            <h4>Service 1</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-leaf"> </i>
-            <h4>Service 2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-phone-alt"> </i>
-            <h4>Service 3</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-bullhorn"> </i>
-            <h4>Service 4</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /third section -->
-    
-    <!-- third section - Services -->
-    <div id="services" class="pad-section">
-      <div class="container">
-        <h2 class="text-center">Our Services</h2> <hr />
-        <div class="row text-center">
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-cloud"> </i>
-            <h4>Service 1</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-leaf"> </i>
-            <h4>Service 2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-phone-alt"> </i>
-            <h4>Service 3</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-bullhorn"> </i>
-            <h4>Service 4</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /third section -->
-    
-    <!-- third section - Services -->
-    <div id="services" class="pad-section">
-      <div class="container">
-        <h2 class="text-center">Our Services</h2> <hr />
-        <div class="row text-center">
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-cloud"> </i>
-            <h4>Service 1</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-leaf"> </i>
-            <h4>Service 2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-phone-alt"> </i>
-            <h4>Service 3</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-bullhorn"> </i>
-            <h4>Service 4</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /third section -->
-    
-    <!-- third section - Services -->
-    <div id="services" class="pad-section">
-      <div class="container">
-        <h2 class="text-center">Our Services</h2> <hr />
-        <div class="row text-center">
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-cloud"> </i>
-            <h4>Service 1</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-leaf"> </i>
-            <h4>Service 2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-phone-alt"> </i>
-            <h4>Service 3</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-bullhorn"> </i>
-            <h4>Service 4</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /third section -->
-    
-    <!-- third section - Services -->
-    <div id="services" class="pad-section">
-      <div class="container">
-        <h2 class="text-center">Our Services</h2> <hr />
-        <div class="row text-center">
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-cloud"> </i>
-            <h4>Service 1</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-leaf"> </i>
-            <h4>Service 2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-phone-alt"> </i>
-            <h4>Service 3</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-bullhorn"> </i>
-            <h4>Service 4</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /third section -->
+    -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

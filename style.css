@@ -12,6 +12,7 @@ html, body
 .navmenu 
 {
   z-index: 1;
+  width: 200px;
 }
 
 .canvas 
@@ -57,7 +58,7 @@ html, body
 { 
   position: fixed; 
   left: 0; top: 0; right: 0; bottom: 0;
-  background: url("img/bg.jpg") top center no-repeat; z-index: -1; 
+  background: url("img/bg.jpg") top center no-repeat; z-index: -1;
   length: 100%;
 }
 
@@ -66,14 +67,39 @@ html, body
   background: white;
 }
 
-#desktop-navi
+#desktop-nav
 {
   width: 100%;
   bottom: 0px;
   left: 0px;
-  background: blue;
-  height: 100px;
-  margin-top: -100px;
+  background: #FFF;
+  height: 50px;
+  margin-top: -50px;
+  z-index: 99;
+  opacity: 0.9;
+  padding: 0px;
+}
+
+
+#desktop-nav ul
+{
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50px;
+}
+
+#desktop-nav li
+{
+  display: inline-block; 
+}
+
+.shadow
+{
+	-moz-box-shadow: 	0px 0px 12px 2px #000;
+	-webkit-box-shadow: 	0px 0px 12px 2px #000;
+	box-shadow: 		0px 0px 12px 2px #000;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000');
 }
 
 @media (min-width: 0) 
@@ -82,7 +108,7 @@ html, body
   {
     display: block; /* force showing the toggle */
   }
-  #desktop-navi
+  #desktop-nav
   {
     display: none;
   }
@@ -107,8 +133,17 @@ html, body
   {
     padding: 0;
   }
-  #desktop-navi
+  #desktop-nav
   {
     display: block; /* force showing the navi */
+  }
+}
+
+@media (max-width: 600px) 
+{
+  #home
+  {
+    height: 50px;
+    background: #FFF;
   }
 }
