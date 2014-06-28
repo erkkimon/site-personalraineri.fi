@@ -102,6 +102,11 @@ html, body
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000');
 }
 
+.tutor-img
+{
+  padding-top: 2em;
+}
+
 @media (min-width: 0) 
 {
   .navbar-toggle 
@@ -114,7 +119,7 @@ html, body
   }
 }
 
-@media (min-width: 1000px) 
+@media (min-width: 992px) 
 {
   body 
   {
@@ -139,11 +144,18 @@ html, body
   }
 }
 
-@media (max-width: 600px) 
+@media (max-width: 768px) 
 {
   #home
   {
     height: 50px;
     background: #FFF;
   }
+  
+  .tutor-img
+  {
+    padding-top: 0em;
+    padding-bottom: 12px;
+  }
+
 }
