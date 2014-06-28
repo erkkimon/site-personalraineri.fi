@@ -22,7 +22,6 @@
     <meta name="twitter:image"          content="img/bg.jpg" />
     <meta name="twitter:description"    content="Taskukokoinen personal trainerisi. Julkaisuun asti ilmaiseksi." />
     
-    
     <link rel="shortcut icon" href="img/favicon.png">
     
     <title>Personal Raineri on treeniohjelma 2.0 – ei enää erillisiä treeniohjelmia ja tulospäiväkirjoja</title>
@@ -60,6 +59,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <div class="likebutton-placeholder">
+        <iframe></iframe>
+      </div> 
     </div>
 
     <!-- Welcomer -->
@@ -72,11 +74,14 @@
     <!-- Desktop navi -->
     <div id="desktop-nav" class="pad-section shadow">
       <div class="container">
-      <ul class="desktop-nav">
-        <li><a onclick="scrollToAnchor('who');">Kuka on Raineri?</a> |</li>
-        <li><a onclick="scrollToAnchor('usage');">Miten se toimii?</a> |</li>
-        <li><a onclick="scrollToAnchor('install');">Haluan asentaa sen!</a></li>
-      </ul>
+        <div class="likebutton-placeholder">
+          <iframe></iframe>
+        </div> 
+        <ul class="desktop-nav">
+          <li><a onclick="scrollToAnchor('who');">Kuka on Raineri?</a> |</li>
+          <li><a onclick="scrollToAnchor('usage');">Miten se toimii?</a> |</li>
+          <li><a onclick="scrollToAnchor('install');">Haluan asentaa sen!</a></li>
+        </ul>
       </div>
     </div>
     
@@ -213,15 +218,17 @@
       </div>
     </div>
     -->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https:////netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="lib/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
     <script src="lib/jasny-bootstrap/js/offcanvas.js"></script>
+    
+    <!-- Additional JavaScript -->
     <script src="js/main.js"></script>
+    <script src="lib/iframetracker/jquery.iframetracker-1.3.js"></script>
+    <script src="lib/dynamic-like-button-switcher/dynamic-like-button-switcher.js"></script>
     
   </body>
 </html>

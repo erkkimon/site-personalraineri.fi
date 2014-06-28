@@ -107,6 +107,21 @@ html, body
   padding-top: 2em;
 }
 
+.likebutton-placeholder
+{
+  width: 100px; 
+  height: 20px; 
+  position: absolute; 
+  bottom: 14px; 
+  right: 0px;
+  opacity: 0.8;
+}
+
+.likebutton-placeholder iframe
+{
+  border: 0px;
+}
+
 @media (min-width: 0) 
 {
   .navbar-toggle 
