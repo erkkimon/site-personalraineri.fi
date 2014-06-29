@@ -122,6 +122,11 @@ html, body
   border: 0px;
 }
 
+.navmenu-default a, #desktop-nav a
+{
+  cursor: pointer;
+}
+
 @media (min-width: 0) 
 {
   .navbar-toggle 
