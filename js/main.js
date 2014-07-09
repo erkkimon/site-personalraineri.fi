@@ -55,3 +55,18 @@ $(document).ready(function()
      $(".likebutton-placeholder").animate({ "opacity": "1.0" }, "slow" );
    }, 15000);
 });
+
+//////////////
+// BUGFIXES //
+//////////////
+
+// This is a temporary fix for the offcanvas menu problem: the menu doesn't 
+// hide if it's open when window size is increased. This fixes it.
+
+$(window).resize(function () 
+{
+    if ($(window).width() > 992) 
+    { 
+        $("#home").trigger("click"); 
+    } 
+});
