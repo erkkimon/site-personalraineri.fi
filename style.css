@@ -58,7 +58,8 @@ html, body
 { 
   position: fixed; 
   left: 0; top: 0; right: 0; bottom: 0;
-  background: url("img/bg.jpg") top center no-repeat; z-index: -1;
+  width: 100%;
+  background: url("img/mockups-fi/cover-fi.jpg") top center no-repeat; z-index: -1;
   length: 100%;
 }
 
