@@ -81,6 +81,15 @@ html, body
   padding: 0px;
 }
 
+#in-english {
+  position: absolute;
+  left: 20px;
+  width: 200px; 
+  height: 20px; 
+  position: absolute; 
+  bottom: 4px; 
+  opacity: 0.8;
+}
 
 #desktop-nav ul
 {
